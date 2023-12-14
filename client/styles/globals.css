@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+* {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* navbar */
+
+.navbarAll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #64E3FF 0%, #D2AFFF 50.42%, #E3A5F9 93.65%);
+  box-shadow: 0px 6px 16px 0px rgba(208, 161, 255, 0.50);
+  border-radius: 0px 0px 24px 24px;
+  height: 90px;
+  width: 100%;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  text-decoration: none;
+  margin: 0 0 0 5%;
+}
+
+.logo-cont {
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar .navbar-logo {
+  font-family: Aurora;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+}
+
+.logo {
+  margin: 2% 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar .navbar-logo span {
+  color: rgb(252, 245, 254);
+}
+
+.navbar .navbar-nav a {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  margin: 1rem 0 0 1rem;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.navbar .navbar-nav a:hover {
+  opacity: 70%;
+}
+
+.navbar .navbar-nav a::after {
+  margin-top: 8px;
+  width: 100%;
+  content: "";
+  display: block;
+  border-bottom: 3.5px solid rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+  color: rgb(255, 255, 255);
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+
+.signUpBut {
+  margin: 0 1rem 0 0;
+  border-radius: 2px;
+  width: 90px;
+  height: 40px;
+  border-radius: 25px;
+  background: #60ddff;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.signUpBut:hover {
+  box-shadow: none;
+  opacity: 70%;
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-extra a:hover {
+  opacity: 70%;
+}
+
+#menu-lapis {
+  display: none;
+}
+
+/* footer */
+
